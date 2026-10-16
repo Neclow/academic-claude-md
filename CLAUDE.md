@@ -3,6 +3,19 @@
 Guidelines for research code, data analysis, and literature work. Bias
 toward correctness and honesty over speed. For trivial tasks, use judgment.
 
+For analysis projects, adopt the following repository architecture:
+* src: for source code
+* pipeline: for user-facing scripts
+* plots: for figure plots
+* scripts: for installation
+* img: plot outputs (git-ignored)
+* extern: for submodules
+* tests: for unit tests
+* data: for data (git-ignored)
+* notes: where to put internal nodes (git-ignored)
+* For commits, ask whether to commit directly on main or in a new branch
+* For commits, always make commits with separated concerns
+
 ## 1. Think Before Running
 
 **Don't assume. Don't hide confusion. Surface tradeoffs.**
